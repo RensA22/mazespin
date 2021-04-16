@@ -1,0 +1,2 @@
+# mazespin
+discord mazespin bot
