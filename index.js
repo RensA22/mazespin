@@ -1,9 +1,10 @@
 const fetch = require('node-fetch');
 let HTMLParser = require('node-html-parser');
+require('dotenv').config();
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login('ODMyNTgyMTk4Mzk2ODQ2MDkx.YHl4mA.w-PQIviccWtXHV2JjBYtQuLRSMQ');
+client.login(process.env.TOKEN);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
