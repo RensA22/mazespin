@@ -13,7 +13,7 @@ client.on('ready', () => {
 client.on('message', gotMessage);
 
 async function gotMessage(msg) {
-    if (msg.channel.id == '832614098687754261' && (msg.content == '!lastspin' || msg.content == '!ls')) {
+    if (msg.content == '!lastspin' || msg.content == '!ls') {
         let url = 'https://mazesp.in/';
         let response = await (await fetch(url)).text();
         let h = HTMLParser.parse(response);
